@@ -48,7 +48,7 @@ namespace Hardware
             {
                 int itemCode = Convert.ToInt32(ProductidtextextBox.Text);
 
-                // Check if the item already exists
+                
                 var existingItem = _db.Items.FirstOrDefault(i => i.ItemCode == itemCode);
 
                 if (existingItem != null)
@@ -57,7 +57,7 @@ namespace Hardware
                     return;
                 }
 
-                // Create and add new item
+                
                 Items item = new Items
                 {
                     ItemCode = itemCode,
@@ -81,10 +81,7 @@ namespace Hardware
 
         
 
-        private void ItemsButton_Click(object sender, RoutedEventArgs e)
-        {
-            
-        }
+       
 
         private void CustomerButton_Click(object sender, RoutedEventArgs e)
         {
@@ -122,6 +119,13 @@ namespace Hardware
                 _db.SaveChanges();
                 LoadData();
             }
+        }
+
+        private void dashboardButton_Click(object sender, RoutedEventArgs e)
+        {
+            Dashboard newWindow = new Dashboard();
+
+            newWindow.Show();
         }
     }
 }

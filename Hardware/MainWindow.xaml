@@ -27,36 +27,41 @@
                HorizontalAlignment="Left"
                TextAlignment="Center"
                Background="Purple"
+               Foreground="LightGray"
                FontWeight="Bold"
                FontSize="25px" 
                Padding="5"
                Text="Hardware Management System" Width="1000"/>
+        <TextBlock Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="2"/>
 
         <StackPanel Grid.Column="0" Grid.RowSpan="4" Background="Purple">
 
+            <Image Width="123" Height="94"  Margin="0,40,0,-150" Source="/building-material-shop-illustration-isolated-on-white-background-building-material-shop-icon-vector.jpg"/>
+
+
             <Button FontSize="15"
-            Margin="0,100,0,0"
-            Width="70"
+            Margin="0,200,0,0"
+            Width="90"
             Background="#FFCB62EA"
             Foreground="White"
             Padding="5" 
-                    Click="ItemsButton_Click"
+                 
             
              >Items</Button>
 
             <Button FontSize="15"
            Margin="0,50,0,0"
-           Width="70"
+           Width="90"
            Background="#FFCB62EA"
            Foreground="White"
-           Padding="5" Click="CustomerButton_Click">Customers</Button>
+           Padding="5" >Customers</Button>
 
             <Button FontSize="15"
                 Margin="0,50,0,0"
-                Width="70"
+                Width="90"
                 Background="#FFCB62EA"
                 Foreground="White"
-                Padding="5" >Dashboard</Button>
+                Padding="5" Click="dashboardButton_Click" >Dashboard</Button>
         </StackPanel>
 
 
@@ -191,7 +196,7 @@
                 Grid.Column="1" 
                 Grid.ColumnSpan="4" 
                 Background="AliceBlue" Margin="0,2,0,0"/>
-        
+
 
 
     </Grid>

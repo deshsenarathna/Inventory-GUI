@@ -9,12 +9,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="AdobeStock_181658575.jpeg" />
+    <None Remove="building-material-shop-illustration-isolated-on-white-background-building-material-shop-icon-vector.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="AdobeStock_181658575.jpeg" />
+    <Resource Include="building-material-shop-illustration-isolated-on-white-background-building-material-shop-icon-vector.jpg" />
   </ItemGroup>
 
 </Project>
