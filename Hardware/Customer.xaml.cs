@@ -110,5 +110,21 @@ namespace Hardware
                 LoadData();
             }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            MainWindow newWindow = new MainWindow();
+
+            newWindow.Show();
+        }
+
+        private void dashboardButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            Dashboard newWindow = new Dashboard();
+
+            newWindow.Show();
+        }
     }
 }

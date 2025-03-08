@@ -83,12 +83,7 @@ namespace Hardware
 
        
 
-        private void CustomerButton_Click(object sender, RoutedEventArgs e)
-        {
-            Customer newWindow = new Customer();
-            
-            newWindow.Show();
-        }
+        
 
         private void editButton_Click(object sender, RoutedEventArgs e)
         {
@@ -123,9 +118,19 @@ namespace Hardware
 
         private void dashboardButton_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
             Dashboard newWindow = new Dashboard();
 
             newWindow.Show();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+              Customer newWindow = new Customer();
+
+                newWindow.Show();
         }
     }
 }

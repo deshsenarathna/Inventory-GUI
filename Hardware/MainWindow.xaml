@@ -54,7 +54,7 @@
            Width="90"
            Background="#FFCB62EA"
            Foreground="White"
-           Padding="5" >Customers</Button>
+           Padding="5" Click="Button_Click_1" >Customers</Button>
 
             <Button FontSize="15"
                 Margin="0,50,0,0"

@@ -36,38 +36,26 @@
         <StackPanel Grid.Column="0" Grid.RowSpan="4" Background="Purple">
 
             <Image Width="123" Height="94"  Margin="0,40,0,-150" Source="/building-material-shop-illustration-isolated-on-white-background-building-material-shop-icon-vector.jpg"/>
-            <TextBlock x:Name="itemstextBox" Grid.Row="1"
-           Grid.Column="2"
-           Text="Items"
-           Height="35"
-           HorizontalAlignment="Center"
-           Margin="0,200,0,0"
-           Padding="5"
-           FontSize="15"
-           TextAlignment="Center"
-           Foreground="White"
-           Background="MediumOrchid" 
-           Width="90" FontWeight="Bold" />
-            <TextBlock x:Name="customertextBox"
-            Text="Customer"
-            Height="35"
-            Margin="0,50,0,160"
-            Padding="5"
-            FontSize="15"
-            TextAlignment="Center"
-            Foreground="White"
-            Background="MediumOrchid" 
-            HorizontalAlignment="Center"
-            Width="90"  />
-            <TextBlock x:Name="dasboardtextBox"
-                Text="Dashboard"
-                Height="35"
-                Padding="5"
-                FontSize="15"
-                TextAlignment="Center"
-                Foreground="White"
-                Background="MediumOrchid"
-                Width="90" Margin="0,-200,0,0"  />
+            <Button FontSize="15"
+                    Margin="0,200,0,0"
+                    Width="90"
+                    Background="#FFCB62EA"
+                    Foreground="White"
+                    Padding="5" Click="Button_Click" >Items</Button>
+
+            <Button FontSize="15"
+                    Margin="0,50,0,0"
+                    Width="90"
+                    Background="#FFCB62EA"
+                    Foreground="White"
+                    Padding="5"  >Customers</Button>
+
+            <Button FontSize="15"
+                    Margin="0,50,0,0"
+                    Width="90"
+                    Background="#FFCB62EA"
+                    Foreground="White"
+                    Padding="5" Click="dashboardButton_Click" >Dashboard</Button>
 
         </StackPanel>
 

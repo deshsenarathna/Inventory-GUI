@@ -28,6 +28,9 @@ namespace Hardware
 
         private void CustomerButton_Click(object sender, RoutedEventArgs e)
         {
+
+
+            
             Customer newWindow = new Customer();
 
             newWindow.Show();
@@ -35,6 +38,7 @@ namespace Hardware
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            
             MainWindow items = new MainWindow();
 
             items.Show();
